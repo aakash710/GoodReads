@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <form method="POST">
+        <input name="text">
+        <input type="submit">
+    </form>
+    <div>
+        <a>{{ suggestquery }}</a>
+    </div>
+</div>
+<div>
+    {% for r in records %}
+    <h2>{{ r }}</h2>
+    {% endfor %}
+</div>
+</body>
+</html>
